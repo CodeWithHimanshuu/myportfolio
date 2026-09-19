@@ -1,3 +1,11 @@
+@media screen and (max-width: 1300px) {
+    .dots-bg {
+        height: auto;
+        aspect-ratio: 16/7.9;
+                
+    }
+    
+}
 @media screen and (max-width: 1200px) {
 
     .projectSection {
@@ -22,6 +30,10 @@
     .firstSectionMid{
         display:none
     }
+    .dots-bg {
+        display: none;
+    }
+
 
 }
 
@@ -46,7 +58,7 @@
         transform: translate(120%, -20px);
     
     }
-
+    
     .nav-container {
         align-items: start;
     }
