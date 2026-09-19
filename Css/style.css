@@ -129,17 +129,19 @@ section {
 }
 
 .firstSectionLeft {
-    width: 30%;
+    width:content;
     line-height: 2rem;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 30px;
 
 }
 
 .firstSectionLeft h4 {
+    font-size: 2rem;
     line-height: 2.5rem;
     font-weight: 400;
 
@@ -266,12 +268,103 @@ section {
     cursor: pointer;
     z-index: 100;
 }
+.firstSectionMid {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+
+}
+
+.firstSectionMid div {
+    position: absolute;
+    width:60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+
+}
+.firstSectionMid div:hover {
+
+    box-shadow: 0 0 20px var(--primary);
+    transition: all 0.5s ease;
+}
+.firstSectionMid img {
+    height: 35px;
+    width: 35px;
+}
+
+/* Center React */
+.react-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Around React */ 
+.html-icon {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.css-icon {
+    top: 25%;
+    right: 0;
+   
+}
+.js-icon {
+    bottom: 25%;
+    right: 0;
+}
+.python-icon {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.java-icon {
+    bottom: 25%;
+    left: 0;
+}           
+.githubdesk-icon {
+    top: 25%;
+    left: 0;
+}
 
 
 .firstSectionRight {
     width: 30%;
+    margin-right: 30px;
 
+}
+.dots-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-top: 40px;
+    margin-left: 8px;
 
+    background-image:
+    radial-gradient(circle, rgba(138,43,226,0.8) 1.5px, transparent 1.5px);
+
+    background-size: 30px 30px;
+
+    /* animation: moveDots 15s linear infinite; */
+}
+
+@keyframes moveDots{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-50px,-50px);
+    }
 }
 
 .firstSectionRight img {
